@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FIZZIX FUN</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Barra lateral -->
+    <nav class="sidebar">
+      <h1 class="logo" onclick="irInicio()">FIZZIX FUN</h1>
+      
+      <ul class="menu">
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('inicio')">Inicio</button>
+          <ul class="submenu" id="inicio">
+            <li><a href="#">Bienvenida</a></li>
+            <li><a href="#">Objetivos</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('estructura')">Estructura</button>
+          <ul class="submenu" id="estructura">
+            <li><a href="#">Niveles</a></li>
+            <li><a href="#">Plan de estudio</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('horarios')">Horarios</button>
+          <ul class="submenu" id="horarios">
+            <li><a href="#">Clases semanales</a></li>
+            <li><a href="#">Talleres</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('modalidades')">Modalidades</button>
+          <ul class="submenu" id="modalidades">
+            <li><a href="#">Online</a></li>
+            <li><a href="#">Presencial</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('temas')">Temas</button>
+          <ul class="submenu" id="temas">
+            <li><a href="#">Matemáticas</a></li>
+            <li><a href="#">Física</a></li>
+            <li><a href="#">Química</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('info')">Información</button>
+          <ul class="submenu" id="info">
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Preguntas frecuentes</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="menu-btn" onclick="toggleSubmenu('biblioteca')">Biblioteca</button>
+          <ul class="submenu" id="biblioteca">
+            <li><a href="#">Apuntes</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Ejercicios</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <h2>Bienvenido a FIZZIX FUN</h2>
+      <p>Tu espacio para aprender Matemática, Física y más, desde secundaria hasta universidad.</p>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
